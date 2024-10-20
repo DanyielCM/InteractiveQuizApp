@@ -1,0 +1,83 @@
+{
+  "1": [
+    {
+      "question": "What is JSX?",
+      "options": ["A JavaScript syntax extension", "A library for managing state", "A CSS preprocessor", "A JavaScript testing framework"],
+      "answer": "A JavaScript syntax extension"
+    },
+    {
+      "question": "Which hook is used to manage state in a functional React component?",
+      "options": ["useEffect", "useState", "useReducer", "useContext"],
+      "answer": "useState"
+    },
+    {
+      "question": "What is the purpose of React's useEffect hook?",
+      "options": ["To manage component state", "To handle side effects", "To define context", "To update the virtual DOM"],
+      "answer": "To handle side effects"
+    },
+    {
+      "question": "How do you create a component in React?",
+      "options": ["By calling React.createComponent()", "By extending a React class", "By defining a function or class", "By calling ReactDOM.render()"],
+      "answer": "By defining a function or class"
+    },
+    {
+      "question": "Which tool can be used to ensure proper type checking in React?",
+      "options": ["React Router", "PropTypes", "React DevTools", "Redux"],
+      "answer": "PropTypes"
+    }
+  ],
+  "2": [
+    {
+      "question": "What is Angular primarily used for?",
+      "options": ["Backend development", "Data analysis", "Front-end web development", "Desktop application development"],
+      "answer": "Front-end web development"
+    },
+    {
+      "question": "Which language is primarily used to write Angular applications?",
+      "options": ["JavaScript", "Python", "TypeScript", "Ruby"],
+      "answer": "TypeScript"
+    },
+    {
+      "question": "What is Angular's CLI command to create a new component?",
+      "options": ["ng create component", "ng new component", "ng generate component", "ng add component"],
+      "answer": "ng generate component"
+    },
+    {
+      "question": "What is a directive in Angular?",
+      "options": ["A tool for managing dependencies", "A feature for DOM manipulation", "A template for components", "A type of Angular service"],
+      "answer": "A feature for DOM manipulation"
+    },
+    {
+      "question": "Which of the following is used to bind data in Angular?",
+      "options": ["Data wrapping", "Data filtering", "Data binding", "Data sourcing"],
+      "answer": "Data binding"
+    }
+  ],
+  "3": [
+    {
+      "question": "Which type of variable declaration is block-scoped in JavaScript?",
+      "options": ["var", "let", "const", "both let and const"],
+      "answer": "both let and const"
+    },
+    {
+      "question": "What is the result of `1 + '1'` in JavaScript?",
+      "options": ["2", "11", "NaN", "TypeError"],
+      "answer": "11"
+    },
+    {
+      "question": "How do you create an array in JavaScript?",
+      "options": ["Using {}", "Using []", "Using ()", "Using ||"],
+      "answer": "Using []"
+    },
+    {
+      "question": "Which method is used to remove the last element of an array?",
+      "options": ["push()", "pop()", "shift()", "unshift()"],
+      "answer": "pop()"
+    },
+    {
+      "question": "What is the use of `map()` method in JavaScript?",
+      "options": ["To add new elements to the array", "To filter elements in an array", "To transform elements in an array", "To check if an element exists in an array"],
+      "answer": "To transform elements in an array"
+    }
+  ]
+}
