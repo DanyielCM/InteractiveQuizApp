@@ -1,0 +1,12 @@
+.form input, .form select {
+    margin: 1rem;
+    background-color: #ddd6cb;
+    color: #738763;
+    border: 2px solid #738763;
+    border-radius: 1rem; 
+    padding: 1rem;
+}
+
+.form button {
+    margin: 1rem;
+}
