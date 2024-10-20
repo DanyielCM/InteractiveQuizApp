@@ -19,7 +19,7 @@ export default function Summary({ params }) {
           You got {quizCorrectAnswers} correct answers out of {quizLength}!
         </h2>
         {quizCorrectAnswers > quizLength / 2 ? (
-          <p>Hurray! You got most of them!</p>
+          <p>Hurray! You were right about most of them!</p>
         ) : (
           <p>Try your luck next time!</p>
         )}

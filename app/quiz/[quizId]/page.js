@@ -15,8 +15,8 @@ export default function Quiz({ params }) {
         <h2>Welcome to {quizName} Quiz!</h2>
         <p>
           Test your {quizName} skills and see how much you really know! Answer
-          each question carefully, and don&apos;t worry—there&apos;s always
-          something new to learn. Good luck, and let the coding begin!
+          each question carefully, and don&apos;t worry — there&apos;s always
+          something new to learn. Good luck, and let the challenge begin!
         </p>
         <Link href={`/quiz/${quizId}${quizName}/question/0`}>
           <button>Begin Quiz</button>
