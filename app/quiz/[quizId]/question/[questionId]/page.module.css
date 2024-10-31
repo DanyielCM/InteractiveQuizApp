@@ -1,0 +1,49 @@
+.container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 4rem 10%;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    padding: 4rem 20%;
+  }
+}
+
+.container li {
+  list-style-type: none
+}
+
+.answer {
+  display: inline-block;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 24px;
+  background: #f9b331;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.answer:hover,
+.answer:focus {
+  background: #DC6B19;
+  color: white;
+}
+
+.correct, .correct:hover {
+  background: #738763;
+  color: #2c203d;
+}
+
+.wrong, .wrong:hover {
+  background: #F2613F;
+  color: #2c203d;
+}
