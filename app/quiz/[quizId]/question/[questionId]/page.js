@@ -22,8 +22,16 @@ export default function Question({ params }) {
   const quizCompleted = questionsIndex === questions[quizId]?.length;
   const currentQuestion = questions[quizId]?.[questionsIndex];
 
+
   useEffect(() => {
-    fetch('/questions.json')
+    const questionsLS = JSON.parse(localStorage.getItem('questions')) || [];
+    const foundQuestions = questionsLS.find((questions) => questions[quizId]);
+    const savedQuestions = foundQuestions ? foundQuestions : 0;
+ 
+    if (savedQuestions) {
+      setQuestions(savedQuestions);
+    } else {
+      fetch('/api/questions')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch the questions');
@@ -37,7 +45,9 @@ export default function Question({ params }) {
       .catch((error) => {
         console.error('Error fetching questions:', error);
       });
-  }, []);
+    }
+    
+  }, [quizId]);
 
   function handleAnswer(option) {
     if (disabled) return;
@@ -52,7 +62,7 @@ export default function Question({ params }) {
 
   function checkAnswer(option) {
     setSelectedAnswer(option);
-    if (option === questions[quizId][questionsIndex].answer) {
+    if (option === questions[quizId][questionsIndex].correctAnswer) {
       setCorrectAnswers((prevCount) => prevCount + 1);
       setAdditionalClass(classes.correct);
     } else {
